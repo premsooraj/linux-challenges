@@ -79,6 +79,7 @@ Solution :
 
  ### Challenge 9
 
+
 #### Move the file named take-the-command-challenge to the directory tmp/files
 
 Solution : 
@@ -95,4 +96,34 @@ Hint: There are files and directories that start with a dot ".", "rm -rf *" won'
 Solution : 
  ```bash
  rm -rf ./* ./.*
+
+ ```
+ ### Challenge 11
+
+ #### There are files in this challenge with different file extensions. Remove all files with the .doc extension recursively in the current working directory.
+
+
+Solution : 
+ ```bash
+ rm **/*.doc
+ ```
+
+  ### Challenge 12
+
+ #### There is a file named access.log in the current working directory. Print all lines in this file that contains the string "GET".
+
+
+Solution : 
+ ```bash
+cat access.log | grep "GET"
+ ```
+
+  ### Challenge 13
+
+ #### Print all files in the current directory, one per line (not the path, just the filename) that contain the string "500".
+
+
+Solution : 
+ ```bash
+grep -l 500 *
  ```
